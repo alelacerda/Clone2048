@@ -8,17 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		4BF4E4E72A0C0E110020C357 /* Clone2048App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF4E4E62A0C0E110020C357 /* Clone2048App.swift */; };
-		4BF4E4E92A0C0E110020C357 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF4E4E82A0C0E110020C357 /* ContentView.swift */; };
+		4BF4E4E92A0C0E110020C357 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF4E4E82A0C0E110020C357 /* GameView.swift */; };
 		4BF4E4EB2A0C0E130020C357 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BF4E4EA2A0C0E130020C357 /* Assets.xcassets */; };
 		4BF4E4EE2A0C0E130020C357 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BF4E4ED2A0C0E130020C357 /* Preview Assets.xcassets */; };
+		4BF4E4F52A0C0E530020C357 /* GameEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF4E4F42A0C0E530020C357 /* GameEngine.swift */; };
+		4BF4E4F72A0C219C0020C357 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF4E4F62A0C219C0020C357 /* ColorExtension.swift */; };
+		4BF4E4F92A0C2F580020C357 /* TileStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF4E4F82A0C2F580020C357 /* TileStyle.swift */; };
+		4BF4E4FB2A0C2F700020C357 /* TileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF4E4FA2A0C2F700020C357 /* TileView.swift */; };
+		4BF4E4FD2A0C2FC50020C357 /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF4E4FC2A0C2FC50020C357 /* BoardView.swift */; };
+		4BF4E4FF2A0C2FEF0020C357 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF4E4FE2A0C2FEF0020C357 /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4BF4E4E32A0C0E110020C357 /* Clone2048.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clone2048.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BF4E4E62A0C0E110020C357 /* Clone2048App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clone2048App.swift; sourceTree = "<group>"; };
-		4BF4E4E82A0C0E110020C357 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4BF4E4E82A0C0E110020C357 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		4BF4E4EA2A0C0E130020C357 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4BF4E4ED2A0C0E130020C357 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4BF4E4F42A0C0E530020C357 /* GameEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameEngine.swift; sourceTree = "<group>"; };
+		4BF4E4F62A0C219C0020C357 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		4BF4E4F82A0C2F580020C357 /* TileStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileStyle.swift; sourceTree = "<group>"; };
+		4BF4E4FA2A0C2F700020C357 /* TileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileView.swift; sourceTree = "<group>"; };
+		4BF4E4FC2A0C2FC50020C357 /* BoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
+		4BF4E4FE2A0C2FEF0020C357 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +63,12 @@
 		4BF4E4E52A0C0E110020C357 /* Clone2048 */ = {
 			isa = PBXGroup;
 			children = (
+				4BF4E5022A0C30530020C357 /* Extensions */,
+				4BF4E5002A0C30220020C357 /* Views */,
 				4BF4E4E62A0C0E110020C357 /* Clone2048App.swift */,
-				4BF4E4E82A0C0E110020C357 /* ContentView.swift */,
 				4BF4E4EA2A0C0E130020C357 /* Assets.xcassets */,
 				4BF4E4EC2A0C0E130020C357 /* Preview Content */,
+				4BF4E4F42A0C0E530020C357 /* GameEngine.swift */,
 			);
 			path = Clone2048;
 			sourceTree = "<group>";
@@ -65,6 +79,34 @@
 				4BF4E4ED2A0C0E130020C357 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4BF4E5002A0C30220020C357 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4BF4E5012A0C30300020C357 /* Board */,
+				4BF4E4E82A0C0E110020C357 /* GameView.swift */,
+				4BF4E4FE2A0C2FEF0020C357 /* HeaderView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4BF4E5012A0C30300020C357 /* Board */ = {
+			isa = PBXGroup;
+			children = (
+				4BF4E4FC2A0C2FC50020C357 /* BoardView.swift */,
+				4BF4E4F82A0C2F580020C357 /* TileStyle.swift */,
+				4BF4E4FA2A0C2F700020C357 /* TileView.swift */,
+			);
+			path = Board;
+			sourceTree = "<group>";
+		};
+		4BF4E5022A0C30530020C357 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4BF4E4F62A0C219C0020C357 /* ColorExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +179,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BF4E4E92A0C0E110020C357 /* ContentView.swift in Sources */,
+				4BF4E4FD2A0C2FC50020C357 /* BoardView.swift in Sources */,
+				4BF4E4E92A0C0E110020C357 /* GameView.swift in Sources */,
+				4BF4E4F72A0C219C0020C357 /* ColorExtension.swift in Sources */,
+				4BF4E4F92A0C2F580020C357 /* TileStyle.swift in Sources */,
+				4BF4E4FB2A0C2F700020C357 /* TileView.swift in Sources */,
+				4BF4E4F52A0C0E530020C357 /* GameEngine.swift in Sources */,
 				4BF4E4E72A0C0E110020C357 /* Clone2048App.swift in Sources */,
+				4BF4E4FF2A0C2FEF0020C357 /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
