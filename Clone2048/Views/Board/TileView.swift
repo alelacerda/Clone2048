@@ -19,7 +19,7 @@ struct TileView: View {
     }
     
     var body: some View {
-        Text("\(self.value)")
+        Text(value == 0 ? " " : "\(self.value)")
             .font(.system(size: self.fontSize, weight: .black, design: .rounded))
             .foregroundColor(self.style.foregroundColor)
             .frame(width: size, height: size)
