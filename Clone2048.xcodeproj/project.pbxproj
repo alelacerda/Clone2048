@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4BB7CA832A0D627B00BDF7DF /* ScoreTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB7CA822A0D627B00BDF7DF /* ScoreTileView.swift */; };
+		4BB7CA852A0D6A2E00BDF7DF /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB7CA842A0D6A2E00BDF7DF /* ButtonView.swift */; };
 		4BF4E4E72A0C0E110020C357 /* Clone2048App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF4E4E62A0C0E110020C357 /* Clone2048App.swift */; };
 		4BF4E4E92A0C0E110020C357 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF4E4E82A0C0E110020C357 /* GameView.swift */; };
 		4BF4E4EB2A0C0E130020C357 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BF4E4EA2A0C0E130020C357 /* Assets.xcassets */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4BB7CA822A0D627B00BDF7DF /* ScoreTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreTileView.swift; sourceTree = "<group>"; };
+		4BB7CA842A0D6A2E00BDF7DF /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		4BF4E4E32A0C0E110020C357 /* Clone2048.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clone2048.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BF4E4E62A0C0E110020C357 /* Clone2048App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clone2048App.swift; sourceTree = "<group>"; };
 		4BF4E4E82A0C0E110020C357 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
@@ -66,9 +70,9 @@
 				4BF4E5022A0C30530020C357 /* Extensions */,
 				4BF4E5002A0C30220020C357 /* Views */,
 				4BF4E4E62A0C0E110020C357 /* Clone2048App.swift */,
+				4BF4E4F42A0C0E530020C357 /* GameEngine.swift */,
 				4BF4E4EA2A0C0E130020C357 /* Assets.xcassets */,
 				4BF4E4EC2A0C0E130020C357 /* Preview Content */,
-				4BF4E4F42A0C0E530020C357 /* GameEngine.swift */,
 			);
 			path = Clone2048;
 			sourceTree = "<group>";
@@ -87,6 +91,8 @@
 				4BF4E5012A0C30300020C357 /* Board */,
 				4BF4E4E82A0C0E110020C357 /* GameView.swift */,
 				4BF4E4FE2A0C2FEF0020C357 /* HeaderView.swift */,
+				4BB7CA822A0D627B00BDF7DF /* ScoreTileView.swift */,
+				4BB7CA842A0D6A2E00BDF7DF /* ButtonView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -181,6 +187,8 @@
 			files = (
 				4BF4E4FD2A0C2FC50020C357 /* BoardView.swift in Sources */,
 				4BF4E4E92A0C0E110020C357 /* GameView.swift in Sources */,
+				4BB7CA852A0D6A2E00BDF7DF /* ButtonView.swift in Sources */,
+				4BB7CA832A0D627B00BDF7DF /* ScoreTileView.swift in Sources */,
 				4BF4E4F72A0C219C0020C357 /* ColorExtension.swift in Sources */,
 				4BF4E4F92A0C2F580020C357 /* TileStyle.swift in Sources */,
 				4BF4E4FB2A0C2F700020C357 /* TileView.swift in Sources */,
