@@ -14,12 +14,14 @@ struct BoardView: View {
             ForEach(0..<self.board.count, id:\.self) { row in
                 HStack {
                     ForEach(0..<self.board[row].count, id:\.self) { column in
-                        
                         TileView(value: board[row][column])
                     }
                 }
             }
         }
+        .padding(16)
         .background(Color.boardBackground)
+        .cornerRadius(8)
+        
     }
 }
