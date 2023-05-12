@@ -124,9 +124,19 @@ class GameEngine {
             let newTileValue = [2,4].randomElement()!
             
             newBoard[newTilePosition.row][newTilePosition.col] = newTileValue
+        } else {
+            newBoard = resetBoard()
         }
-        
         return newBoard
+    }
+    
+    func resetBoard() -> Board {
+        var board = Array(repeating: [0,0,0,0], count: 4)
+        
+        board = addTile(board: board)
+        board = addTile(board: board)
+        
+        return board
     }
     
     private func moveRow(direction: Direction, row: [Int]) -> [Int] {
