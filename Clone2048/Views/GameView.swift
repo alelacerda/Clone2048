@@ -12,7 +12,8 @@ enum Direction{
 }
 
 struct GameView: View {
-    var board = [[0,0,0,4], [0,0,2,16], [2,16,32,4], [32,128,64,8]]
+    @StateObject var model = GameModel()
+    let engine = GameEngine()
     
     // Drag Gesture Variables
     @State var direction: Direction = .none
@@ -20,9 +21,10 @@ struct GameView: View {
 
     var body: some View {
         VStack {
-            HeaderView()
+            HeaderView(score: model.score, bestScore:
+                        model.bestScore)
                 .padding(.bottom)
-            BoardView(board: board)
+            BoardView(board: model.board)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color.gameBackground)
@@ -32,24 +34,23 @@ struct GameView: View {
                 
                 if value.translation.width < 0 && value.translation.height > -30 && value.translation.height < 30 {
                     self.direction = .left
-                    print("left swipe")
+                    print("left")
                 }
                 else if value.translation.width > 0 && value.translation.height > -30 && value.translation.height < 30 {
                     self.direction = .right
-                    print("right swipe")
+                    print("right")
                 }
                 else if value.translation.height < 0 && value.translation.width < 100 && value.translation.width > -100 {
                     self.direction = .up
-                    print("up swipe")
                 }
                 else if value.translation.height > 0 && value.translation.width < 100 && value.translation.width > -100 {
                     self.direction = .down
-                    print("down swipe")
                 }
                 else {
                     self.direction = .none
-                    print("no clue")
                 }
+                
+                model.board = engine.moveBoard(direction: self.direction, board: model.board)
             })
     }
 }

@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct HeaderView: View {
+    
+    @State var score: Int
+    @State var bestScore: Int
+    
     var body: some View {
         HStack {
             Text("2048")
@@ -19,8 +23,8 @@ struct HeaderView: View {
             
             VStack(alignment: .center) {
                 HStack {
-                    ScoreTileView(title: "Score", score: 8)
-                    ScoreTileView(title: "Best", score: 24)
+                    ScoreTileView(title: "Score", score: score)
+                    ScoreTileView(title: "Best", score: bestScore)
                 }
                 .frame(maxWidth: .infinity)
                 

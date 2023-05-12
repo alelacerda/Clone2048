@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B7A297F2A0E590D008A3354 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A297E2A0E590D008A3354 /* GameModel.swift */; };
 		4BB7CA832A0D627B00BDF7DF /* ScoreTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB7CA822A0D627B00BDF7DF /* ScoreTileView.swift */; };
 		4BB7CA852A0D6A2E00BDF7DF /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB7CA842A0D6A2E00BDF7DF /* ButtonView.swift */; };
 		4BF4E4E72A0C0E110020C357 /* Clone2048App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF4E4E62A0C0E110020C357 /* Clone2048App.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B7A297E2A0E590D008A3354 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 		4BB7CA822A0D627B00BDF7DF /* ScoreTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreTileView.swift; sourceTree = "<group>"; };
 		4BB7CA842A0D6A2E00BDF7DF /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		4BF4E4E32A0C0E110020C357 /* Clone2048.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clone2048.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,6 +72,7 @@
 				4BF4E5022A0C30530020C357 /* Extensions */,
 				4BF4E5002A0C30220020C357 /* Views */,
 				4BF4E4E62A0C0E110020C357 /* Clone2048App.swift */,
+				4B7A297E2A0E590D008A3354 /* GameModel.swift */,
 				4BF4E4F42A0C0E530020C357 /* GameEngine.swift */,
 				4BF4E4EA2A0C0E130020C357 /* Assets.xcassets */,
 				4BF4E4EC2A0C0E130020C357 /* Preview Content */,
@@ -195,6 +198,7 @@
 				4BF4E4F52A0C0E530020C357 /* GameEngine.swift in Sources */,
 				4BF4E4E72A0C0E110020C357 /* Clone2048App.swift in Sources */,
 				4BF4E4FF2A0C2FEF0020C357 /* HeaderView.swift in Sources */,
+				4B7A297F2A0E590D008A3354 /* GameModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
