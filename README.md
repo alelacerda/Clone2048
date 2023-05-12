@@ -8,3 +8,8 @@ This is a SwiftUI clone app of the 2048 game.
 ## Motivation
 I made this clone app mainly to study basic game development using SwiftUI.
 
+
+## To Do
+* Add score
+* Add best score and save data
+* Refactor GameModel
