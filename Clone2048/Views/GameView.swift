@@ -51,6 +51,9 @@ struct GameView: View {
                 }
                 
                 model.board = engine.moveBoard(direction: self.direction, board: model.board)
+                if self.direction != .none {
+                    model.board = engine.addTile(board: model.board)
+                }
             })
     }
 }

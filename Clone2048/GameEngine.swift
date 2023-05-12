@@ -107,6 +107,27 @@ class GameEngine {
         return resultBoard
     }
     
+    func addTile(board: Board) -> Board {
+        
+        var newBoard = board
+        
+        var zeroPositions = [(row: Int, col: Int)]()
+        for i in 0..<newBoard.count {
+            for j in 0..<newBoard[i].count {
+                if newBoard[i][j] == 0 {
+                    zeroPositions.append((i, j))
+                }
+            }
+        }
+        if !zeroPositions.isEmpty {
+            let newTilePosition = zeroPositions.randomElement()!
+            let newTileValue = [2,4].randomElement()!
+            
+            newBoard[newTilePosition.row][newTilePosition.col] = newTileValue
+        }
+        
+        return newBoard
+    }
     
     private func moveRow(direction: Direction, row: [Int]) -> [Int] {
         var newRow = [Int]()
